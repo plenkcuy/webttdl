@@ -34,8 +34,6 @@ app.post("/mp4", async (req, res) => {
   
   if (
     videoLink === "" || 
-    videoLink === youtube || 
-    videoLink === facebook || 
     videoLink === null || 
     videoLink === undefined
   ){
