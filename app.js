@@ -34,8 +34,8 @@ app.post("/mp4", async (req, res) => {
   
   if (
     videoLink === "" ||
-    videoLink === 'youtube.com/' ||
-    videoLink === 'facebook.com/' ||
+    videoLink === youtube.com ||
+    videoLink === facebook.com ||
     videoLink === null ||
     videoLink === undefined 
   
@@ -54,7 +54,7 @@ res.status(200).render("index", {
   success : true,  video_title : data.result.nickname, video_link : data.result.nowm
 })
       
-    res.status(404).render("index", {
+    res.status(500).render("index", {
       success : false, message : data.message
     })
       
