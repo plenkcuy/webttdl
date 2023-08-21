@@ -33,12 +33,11 @@ app.post("/mp4", async (req, res) => {
   const videoLink = req.body.link
   
   if (
-    videoLink === "" ||
-    videoLink === youtube.com ||
-    videoLink === facebook.com ||
-    videoLink === null ||
-    videoLink === undefined 
-  
+    videoLink === "" || 
+    videoLink === youtube || 
+    videoLink === facebook || 
+    videoLink === null || 
+    videoLink === undefined
   ){
     return res.render("index", { success : false, message : "Wrong Link, Paste Link Tiktok !!"});
   } else {
