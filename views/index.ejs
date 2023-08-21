@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+  <link rel="shortcut icon" type="image/png" href="/yt.png" />
+  <link rel="stylesheet" href="/css/styles.css">
+  <title>Tiktok Downloader No Watermark</title>
+</head>
+
+<body>
+  
+<audio autoplay="true">
+    <source src="https://e.top4top.io/m_2783b033o0.mp3" type="audio/mpeg">
+    Browsermu tidak mendukung tag audio, upgrade donk!
+</audio>
+  
+  <div class="top-container">
+    <form action="/mp4" method="POST" id="form">
+      <h1><span class="bi bi-tiktok"></span> Tiktok Downloader</h1>
+      <h4>Creator: Apxxx.com</h4>
+      <div>
+        <input type="text" name="link" placeholder="Paste Link Tiktok Here"><button id="submit-btn">Convert</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="bottom-container">
+    <% if (typeof success != "undefined" && success) { %>
+      <div class="success">
+        <p> <%= video_title %> </p>
+        <a href="<%= video_link %>"><button id="download-btn">DOWNLOAD</button></a>
+      </div>
+    <% } else if (typeof success != "undefined" && !success) { %>
+      <div class="errors">
+        <p> <%= message %> </p>
+      </div>
+    <% } %>
+  </div>
+
+</body>
+
+</html>
