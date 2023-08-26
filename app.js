@@ -39,7 +39,7 @@ app.post("/mp4", async (req, res) => {
   ){
     return res.render("index", { success : false, message : "Wrong Link, Paste Link Tiktok !!"});
   } else {
-fetch(`https://api.kamplenggg.repl.co/api/download/tiktok?url=${videoLink}&apikey=TeAyq8YBDT`, {
+fetch(`https://api.tiklydown.eu.org/api/download?url=${videoLink}`, {
     method: 'GET',
     headers: {
         'Accept': 'application/json',
@@ -48,10 +48,10 @@ fetch(`https://api.kamplenggg.repl.co/api/download/tiktok?url=${videoLink}&apike
     .then (response => response.json())
     .then (data => {
 res.status(200).render("index", {
-  success : true,  video_title : data.result.nickname, video_link : data.result.nowm
+  success : true,  video_title : data.url, video_link : data.video.noWatermark
 })
       
-    res.status(500).render("index", {
+    res.status(403).render("index", {
       success : false, message : data.message
     })
       
