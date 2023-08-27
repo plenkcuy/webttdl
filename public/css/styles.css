@@ -99,7 +99,7 @@ body{
   color: black;
   padding: 12px;
   color: white;
-  background-color: #00FFFF;
+  background-color: black;
   border-radius: 5px;
   text-decoration: none;
   box-shadow: 2px 2px 5px gray;
@@ -107,7 +107,7 @@ body{
   cursor: pointer;
   letter-spacing: 1px;
   font-family: inherit;
-  border: 1px solid #00FFFF;
+  border: 1px solid black;
   transition: 0.3s ease-out;
 }
 
