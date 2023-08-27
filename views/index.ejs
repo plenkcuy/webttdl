@@ -29,7 +29,8 @@
       <div class="success">
         <img src="<%= video_embed %>" style="width:200px;height:300px;"></img>
         <p> <%= video_title %> </p>
-        <a href="<%= video_link %>"><button id="download-btn">DOWNLOAD</button></a>
+        <a href="<%= video_link %>"><button id="download-btn">DOWNLOAD VIDEO</button></a>
+        <a href="<%= video_music %>"><button id="download-btn2">DOWNLOAD MUSIC</button></a>
       </div>
     <% } else if (typeof success != "undefined" && !success) { %>
       <div class="errors">
