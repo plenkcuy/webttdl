@@ -118,6 +118,30 @@ body{
   transform: scale(1.1);
 }
 
+#download-btn2{
+  width: fit-content;
+  color: black;
+  padding: 12px;
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  text-decoration: none;
+  box-shadow: 2px 2px 5px gray;
+  font-style: normal;
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-family: inherit;
+  border: 1px solid black;
+  transition: 0.3s ease-out;
+}
+
+#download-btn2:hover{
+  color:black;
+  background-color:  white;
+  border: 1px solid  lightgray;
+  transform: scale(1.1);
+  }
+
 @media(max-width:768px){
   .bottom-container{
     width: 90%;
