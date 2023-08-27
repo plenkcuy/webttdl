@@ -48,7 +48,7 @@ fetch(`https://api.tiklydown.eu.org/api/download?url=${videoLink}`, {
     .then (response => response.json())
     .then (data => {
 res.status(200).render("index", {
-  success : true,  video_title : data.url, video_link : data.video.noWatermark, video_embed : data.video.cover
+  success : true,  video_title : data.author.name, video_link : data.video.noWatermark, video_embed : data.video.cover, video_music : data.music.play_url
 })
       
     res.status(403).render("index", {
